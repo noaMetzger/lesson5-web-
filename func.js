@@ -47,3 +47,21 @@ function f5(x){
   </tr>`)
   document.querySelector("#tab").innerHTML+=t.join('');
 }
+function f6(){
+  const title=document.querySelector("#title").value;
+  const artist=document.querySelector("#artist").value;
+  const country=document.querySelector("#country").value;
+  const company=document.querySelector("#company").value;
+  const price=document.querySelector("#price").value;
+  const year=document.querySelector("#year").value;
+  const id=document.querySelector("#id").value;
+catalog.push({title,artist,country,company,price,year,id})
+console.log(catalog);
+}
+function f7(){
+  const id=document.querySelector("#remove").value;
+  const index=catalog.findIndex(x=>x.id==id);
+  catalog.splice(index,1);
+  console.log(catalog);
+
+}
