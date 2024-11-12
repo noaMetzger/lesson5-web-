@@ -54,7 +54,7 @@ function f6(){
   const company=document.querySelector("#company").value;
   const price=document.querySelector("#price").value;
   const year=document.querySelector("#year").value;
-  const id=document.querySelector("#id").value;
+  const id=catalog.length+100;
 catalog.push({title,artist,country,company,price,year,id})
 console.log(catalog);
 }
